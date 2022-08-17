@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 95%);
+}
+
+.centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  border-radius: 15px;
+  overflow: hidden;
+  width: 800px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.card {
+  padding: 2em;
+  padding-block: 3em;
+}
+.card img {
+  width: 70px;
+}
+.card .heading {
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  color: hsl(0deg, 0%, 95%);
+  text-transform: uppercase;
+}
+.card .para {
+  letter-spacing: 1px;
+  line-height: 1.2;
+  font-size: 15px;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-family: "Lexend Deca";
+  font-weight: 400;
+}
+.card .btn {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  background-color: hsl(0deg, 0%, 95%);
+  display: inline-block;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 25px;
+  margin-top: 50px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(1, 0.27, 0.09, 0.92);
+}
+
+.card:nth-of-type(1) {
+  background-color: hsl(31deg, 77%, 52%);
+}
+.card:nth-of-type(1) .btn {
+  color: hsl(31deg, 77%, 52%);
+}
+.card:nth-of-type(1) .btn:hover {
+  color: hsl(0deg, 0%, 95%);
+  outline: 2px solid hsl(0deg, 0%, 95%);
+  background-color: hsl(31deg, 77%, 52%);
+}
+
+.card:nth-of-type(2) {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.card:nth-of-type(2) .btn {
+  color: hsl(184deg, 100%, 22%);
+}
+.card:nth-of-type(2) .btn:hover {
+  color: hsl(0deg, 0%, 95%);
+  outline: 2px solid hsl(0deg, 0%, 95%);
+  background-color: hsl(184deg, 100%, 22%);
+}
+
+.card:nth-of-type(3) {
+  background-color: hsl(179deg, 100%, 13%);
+}
+.card:nth-of-type(3) .btn {
+  color: hsl(179deg, 100%, 13%);
+}
+.card:nth-of-type(3) .btn:hover {
+  color: hsl(0deg, 0%, 95%);
+  outline: 2px solid hsl(0deg, 0%, 95%);
+  background-color: hsl(179deg, 100%, 13%);
+}
+
+.attribution {
+  align-self: end;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media screen and (max-width: 810px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .container {
+    width: min(250px, 100%);
+  }
+}/*# sourceMappingURL=main.css.map */

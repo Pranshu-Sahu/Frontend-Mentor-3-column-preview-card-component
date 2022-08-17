@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+$bright-orange: hsl(31,
+77%,
+52%);
+$dark-cyan:hsl(184,
+100%,
+22%);
+$very-dark-cyan:hsl(179,
+100%,
+13%);
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+.centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    border-radius: 15px;
+    overflow: hidden;
+    width: 800px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.card {
+    padding: 2em;
+    padding-block: 3em;
+    img {
+        width: 70px;
+    }
+    .heading {
+        font-family: 'Big Shoulders Display';
+        font-weight: 700;
+        color: hsl(0, 0%, 95%);
+        text-transform: uppercase;
+    }
+    .para {
+        letter-spacing: 1px;
+        line-height: 1.2;
+        font-size: 15px;
+        color: hsla(0, 0%, 100%, 0.75);
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+    }
+    .btn {
+        font-family: 'Lexend Deca';
+        font-weight: 400;
+        background-color: hsl(0, 0%, 95%);
+        display: inline-block;
+        border: none;
+        border-radius: 25px;
+        padding: 12px 25px;
+        margin-top: 50px;
+        cursor: pointer;
+        transition: all 0.4s cubic-bezier(1, .27, .09, .92);
+    }
+}
+
+.card:nth-of-type(1) {
+    background-color: $bright-orange;
+    .btn {
+        color: $bright-orange;
+        &:hover {
+            color: hsl(0, 0%, 95%);
+            outline: 2px solid hsl(0, 0%, 95%);
+            background-color: $bright-orange;
+        }
+    }
+}
+
+.card:nth-of-type(2) {
+    background-color: $dark-cyan;
+    .btn {
+        color: $dark-cyan;
+        &:hover {
+            color: hsl(0, 0%, 95%);
+            outline: 2px solid hsl(0, 0%, 95%);
+            background-color: $dark-cyan
+        }
+    }
+}
+
+.card:nth-of-type(3) {
+    background-color: $very-dark-cyan;
+    .btn {
+        color: $very-dark-cyan;
+        &:hover {
+            color: hsl(0, 0%, 95%);
+            outline: 2px solid hsl(0, 0%, 95%);
+            background-color: $very-dark-cyan
+        }
+    }
+}
+
+.attribution {
+    align-self: end;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 810px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .container {
+        width: min(250px, 100%);
+    }
+}
